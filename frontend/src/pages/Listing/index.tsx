@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { MoviePage } from "types/movies";
 import { BASE_URL } from "utils/requests";
 
-function Linting() {
+function Listing() {
 
     const[pageNumber, setPageNumber] = useState(0);
 
@@ -17,7 +17,6 @@ function Linting() {
         setPageNumber(data.number);
       });
     }, []);
-
 
     return (
 
@@ -59,4 +58,4 @@ function Linting() {
     )
 }
 
-export default Linting;
+export default Listing;
